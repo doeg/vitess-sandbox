@@ -1,0 +1,7 @@
+{
+    "tables": {
+        "cats_seq": {
+            "type": "sequence"
+        }
+    }
+}

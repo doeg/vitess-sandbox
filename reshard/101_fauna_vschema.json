@@ -1,0 +1,22 @@
+{
+    "sharded": true,
+    "vindexes": {
+        "hash": {
+            "type": "hash"
+        }
+    },
+    "tables": {
+        "cats": {
+            "column_vindexes": [
+                {
+                    "column": "cat_id",
+                    "name": "hash"
+                }
+            ],
+            "auto_increment": {
+                "column": "cat_id",
+                "sequence": "cats_seq"
+            }
+        }
+    }
+}
